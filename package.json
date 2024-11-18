@@ -1,0 +1,7 @@
+{
+  "name": "bias-checker-extension",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Chrome extension for checking AI bias and facts"
+}

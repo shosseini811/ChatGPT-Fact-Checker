@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="marked.min.js"></script>
+    <style>
+        body {
+            width: 400px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.5;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            font-size: 24px;
+            color: #000;
+            margin: 0 0 20px 0;
+            font-weight: 600;
+        }
+        #status {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            background-color: #e8f5e9;
+            color: #1b5e20;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        #result h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 15px 0;
+            color: #333;
+        }
+        #result h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 15px 0 10px 0;
+            color: #333;
+        }
+        #result strong {
+            font-weight: 600;
+            color: #333;
+        }
+        #result em {
+            font-style: normal;
+            color: #333;
+        }
+        #result a {
+            color: #0066ff;
+            text-decoration: none;
+        }
+        #result a:hover {
+            text-decoration: underline;
+        }
+        #result br {
+            display: block;
+            margin: 8px 0;
+            content: "";
+        }
+        #loading {
+            display: none;
+            color: #666;
+            font-style: italic;
+        }
+        #error {
+            display: none;
+            color: #d32f2f;
+            padding: 10px;
+            background-color: #ffebee;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>ChatGPT Fact Checker</h2>
+    </div>
+    <div id="status"></div>
+    <div id="loading">Analyzing selected text...</div>
+    <div id="error"></div>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+</html>

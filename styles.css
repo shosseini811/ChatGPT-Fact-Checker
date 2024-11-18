@@ -1,0 +1,112 @@
+.container {
+  width: 400px;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #2563eb;
+  margin-bottom: 16px;
+}
+
+.input-section {
+  margin-bottom: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.results-section {
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.label {
+  font-weight: bold;
+  color: #4b5563;
+}
+
+.value {
+  color: #1f2937;
+}
+
+.fact-check {
+  margin-top: 16px;
+}
+
+.fact-check h3 {
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.fact-check ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fact-check li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #2563eb;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
